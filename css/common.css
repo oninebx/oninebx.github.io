@@ -110,17 +110,23 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
     transition: all 0.4s;
 }
 .search {
-    opacity: 0.6;
-    position: fixed;
+    /* 
+    
     right: 20px;
     top: 60px;
     cursor: pointer;
     z-index: 99;
+    
+    transition: all 0.4s; */
+    z-index: 1;
     width: 35px;
-    transition: all 0.4s;
+    opacity: 0.6;
+    position: fixed;
+    right: 36%;
+    top: 15.5vmin;
 }
 .search-input {
-    width: 42px;
+    width: 30%;
     height: 42px;
     padding-left: 15px;
     border-radius: 42px;
@@ -130,9 +136,11 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
     position: relative;
     transition: all 0.4s;
     position: fixed;
-    right: 10px;
-    top: 57px;
-    z-index: -1;
+    right: 35%;
+    top: 15vmin;
+    z-index: 1;
+    
+    
 }
 .tags {
     margin-top:10px
@@ -149,4 +157,8 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
     margin-right:5px;
     color:#bfbfbf;
     border-color:#bfbfbf
+}
+
+.min-vh-90 {
+  min-height: 90vh !important;
 }

@@ -20,16 +20,16 @@
       <ul id="friends"></ul>
     </ul>
     <div class="main">
-      <div class="page_header" ></div>
+      <!-- <div class="page_header" ></div> -->
       <div class="author">
         <div class="head">
-          <img src="https://avatars.githubusercontent.com/u/7676292?v=4" class="img-responsive img-circle" id="owner-avatar">
+          <img src="https://avatars.githubusercontent.com/u/7676292?v=4" class="img-responsive img-circle">
         </div>
-        <h3 class="name" id="title"></h3>
+        <h3 class="name" id="title">Ryan's blog</h3>
         <p class="name" id="instruction"></p>
-        <p class="name">I am <text id="changerificwordspanid"></text> today!</p>
+        <p class="aphorism"><text id="changerificwordspanid"></text></p>
       </div>
-      <div class="container">
+      <div class="container min-vh-90">
         <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1">
           <ul id="issue-list" class="main_content" style="padding-left: 0px; opacity: 1; transform: translateY(0px);">
             <br>
@@ -63,15 +63,37 @@
         $('.name').css("transform","translateY(0)");
         $('.main_content').css("opacity","1");
         $('.main_content').css("transform","translateY(0)");
-        
-        $("#changerificwordspanid").typed({
-          strings: ["good", "happy", "healthy", "tall"],
-          typeSpeed: 100,
-          startDelay: 10,
-          showCursor: true,
-          shuffle: true,
-          loop:true
-        });
+        // $("#changerificwordspanid").typed({
+        //   strings: ["The", "sunshine", ",", "having", "no", "alternative", "on", "the", "nothing", "new", "."],
+        //   typeSpeed: 100,
+        //   startDelay: 10,
+        //   showCursor: true,
+        //   shuffle: true,
+        //   loop:true
+        // });
       });
+      init = () =>{
+        var text = "True mastery of any skill takes a lifetime.".split(' ');
+        var num = text.length;
+        var i = 0;
+        setInterval(e => {
+          if(i >= num){
+            setTimeout(() => {
+              i = -1;
+              document.getElementById('changerificwordspanid').innerHTML = '';
+            }, 4000);
+          }else {
+            
+            this.demoContent(text, num, i++);
+          }
+          
+        }, 800);
+      }
+      demoContent = (text, num, i) => {
+        if(i < num && i >=0) {
+          document.getElementById('changerificwordspanid').innerHTML += ' ' + text[i];
+        }
+      }
+      init();
     </script>
 </html>
