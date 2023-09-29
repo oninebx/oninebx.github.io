@@ -122,11 +122,11 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
     width: 35px;
     opacity: 0.6;
     position: fixed;
-    right: 36%;
+    right: 33%;
     top: 15.5vmin;
 }
 .search-input {
-    width: 30%;
+    width: 36%;
     height: 42px;
     padding-left: 15px;
     border-radius: 42px;
@@ -136,7 +136,7 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
     position: relative;
     transition: all 0.4s;
     position: fixed;
-    right: 35%;
+    right: 32%;
     top: 15vmin;
     z-index: 1;
     
