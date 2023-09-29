@@ -153,9 +153,21 @@ a {
     top: 25.5vmax;
     right: 12%;
   }
+
+  .search-label {
+    top: 18.5vmax;
+    right: 12%;
+  }
+
   .search-input {
     width: 80%;
     top: 25vmax;
+    left: 10%;
+  }
+
+  .search-input-label {
+    width: 80%;
+    top: 18vmax;
     left: 10%;
   }
 

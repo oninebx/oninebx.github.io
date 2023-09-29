@@ -139,8 +139,31 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
     right: 32%;
     top: 15vmin;
     z-index: 1;
-    
-    
+}
+
+.search-label {
+    z-index: 1;
+    width: 35px;
+    opacity: 0.6;
+    position: fixed;
+    right: 33%;
+    top: 18.5vmin;
+}
+
+.search-input-label {
+  width: 36%;
+  height: 42px;
+  padding-left: 15px;
+  border-radius: 42px;
+  border: 1px solid rgba(127,140,141,0.6);
+  background: white;
+  outline: none;
+  position: relative;
+  transition: all 0.4s;
+  position: fixed;
+  right: 32%;
+  top: 18vmin;
+  z-index: 1;
 }
 .tags {
     margin-top:10px
